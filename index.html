@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VibeVault</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #0f0f0f;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px;
+            font-size: 40px;
+            font-weight: bold;
+            background: #1a1a1a;
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        .card {
+            background: #1f1f1f;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #00ffcc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>VibeVault</header>
+
+<section>
+    <h2>Welcome</h2>
+    <p>This is my space on the internet. More coming soon.</p>
+</section>
+
+<section class="card">
+    <h2>About Me</h2>
+    <p>Just building something cool. Stay tuned.</p>
+</section>
+
+<section class="card">
+    <h2>Daily Quote</h2>
+    <p id="quote">Click below to get a vibe.</p>
+    <button onclick="newQuote()">New Quote</button>
+</section>
+
+<script>
+function newQuote() {
+    let quotes = [
+        "Stay low, build high.",
+        "Discipline beats motivation.",
+        "Small steps every day.",
+        "You become what you repeat.",
+        "Focus. Build. Win."
+    ];
+
+    let random = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").innerText = quotes[random];
+}
+</script>
+
+</body>
+</html>
