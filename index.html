@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>VibeVault</title>
+    <title>Top Tier Trade</title>
     <style>
         body {
             margin: 0;
@@ -13,67 +13,45 @@
 
         header {
             padding: 40px;
-            font-size: 40px;
+            font-size: 35px;
             font-weight: bold;
             background: #1a1a1a;
         }
 
         section {
-            padding: 50px;
-        }
-
-        .card {
-            background: #1f1f1f;
-            margin: 20px auto;
-            padding: 20px;
-            width: 80%;
-            border-radius: 10px;
+            padding: 40px;
         }
 
         button {
-            padding: 10px 20px;
+            padding: 12px 25px;
             background: #00ffcc;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
 
-<header>VibeVault</header>
+<header>Top Tier Trade</header>
 
 <section>
-    <h2>Welcome</h2>
-    <p>This is my space on the internet. More coming soon.</p>
+    <h1>Welcome Berry Trades We Back 🚀</h1>
+    <p>Your trading journey starts here.</p>
+
+    <br><br>
+
+    <button>
+        <a href="signup.html">Sign Up</a>
+    </button>
 </section>
-
-<section class="card">
-    <h2>About Me</h2>
-    <p>Just building something cool. Stay tuned.</p>
-</section>
-
-<section class="card">
-    <h2>Daily Quote</h2>
-    <p id="quote">Click below to get a vibe.</p>
-    <button onclick="newQuote()">New Quote</button>
-</section>
-
-<script>
-function newQuote() {
-    let quotes = [
-        "Stay low, build high.",
-        "Discipline beats motivation.",
-        "Small steps every day.",
-        "You become what you repeat.",
-        "Focus. Build. Win."
-    ];
-
-    let random = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quote").innerText = quotes[random];
-}
-</script>
 
 </body>
 </html>
