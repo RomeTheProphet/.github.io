@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Berry Traders</title>
+
+  <!-- Your CSS here -->
+  <style>
+    body {
+      background: #0d1117;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Welcome back Berry Traders</h1>
+
+  <!-- 👇 ADD TRADINGVIEW HERE 👇 -->
+
+
+
+  <!-- 👆 END OF TRADINGVIEW -->
+
+</body>
+</html>
